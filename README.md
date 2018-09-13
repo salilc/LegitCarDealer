@@ -1,18 +1,19 @@
 # datasciencews
-The carvana dataset was obtained from Kaggle through https://www.kaggle.com/c/DontGetKicked/data
+The carvana dataset was obtained from Kaggle through https://www.kaggle.com/c/DontGetKicked/data .
+
 The objective of this analysis is to predict if the car purchased at the Auction is a Lemon (bad buy).
 
 1. The dataprocessor.py deals with data preprocessing viz.
 
-  - cleaning data
+      - cleaning data
 
-  - removing unwanted features
+      - removing unwanted features
 
-  - finding null values and replacing by appropriate values
+      - finding null values and replacing by appropriate values
 
-  - Converting all features to log scale
+      - Converting all features to log scale
 
-  - Label encoding categorical features
+      - Label encoding categorical features
 
 
 2. The visualizer.py gives us visualizations across predictor variables
