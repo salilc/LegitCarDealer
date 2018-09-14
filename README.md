@@ -19,6 +19,11 @@ The objective of this analysis is to predict if the car purchased at the Auction
 2. The visualizer.py gives us visualizations across predictor variables
 
 3. The modelgenerator.py file creates,tunes and fits classifier models. It also calculates AUC and plots the
-confusion matrix and the classification report.
+   confusion matrix and the classification report.
+   
+Future Work :
+
+1. Work on improving the AUC through xgboost and LightGBM algorithms.
+2. Try and leverage outliers and missing values.
 
 
