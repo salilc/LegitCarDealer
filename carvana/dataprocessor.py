@@ -1,16 +1,15 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
-import numpy as np 
-import pandas as pd
-from sklearn import preprocessing
-#import lightgbm as lgbm
-#import xgboost as xgb
-#from sklearn.svm import SVC
+
 """
 Created on Tue Jul 24 19:05:47 2018
 
 @author: salilc
 """
+
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
+import numpy as np 
+import pandas as pd
+from sklearn import preprocessing
 
 class DataProcessor:
     # Split predictors into categorical and continuous features.

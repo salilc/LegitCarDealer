@@ -1,12 +1,14 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
-import matplotlib.pyplot as plt
-import seaborn as sns
 """
 Created on Wed Sep 12 22:07:21 2018
 
 @author: salilc
 """
+
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
+import matplotlib.pyplot as plt
+import seaborn as sns
+
 class Visualizer:
 
     # Correlation matrix for continuous features

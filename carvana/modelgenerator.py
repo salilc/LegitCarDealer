@@ -1,3 +1,9 @@
+"""
+Created on Wed Sep 12 22:07:29 2018
+
+@author: salilc
+"""
+
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 import pandas as pd
@@ -8,12 +14,6 @@ from sklearn.ensemble import RandomForestClassifier
 import xgboost as xgb
 import lightgbm as lgbm
 from sklearn.metrics import accuracy_score, classification_report,roc_auc_score,confusion_matrix,roc_curve
-
-"""
-Created on Wed Sep 12 22:07:29 2018
-
-@author: salilc
-"""
 
 class ModelGenerator:
     

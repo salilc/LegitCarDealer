@@ -1,3 +1,9 @@
+"""
+Created on Wed Sep 12 22:08:14 2018
+
+@author: salilc
+"""
+
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 import pandas as pd
@@ -7,11 +13,7 @@ from modelgenerator import ModelGenerator
 from sklearn import model_selection
 from sklearn.model_selection import train_test_split
 
-"""
-Created on Wed Sep 12 22:08:14 2018
 
-@author: salilc
-"""
 pd.set_option('display.max_row', 10000)
 pd.set_option('display.max_columns', 1000)
            
