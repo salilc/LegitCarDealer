@@ -20,10 +20,19 @@ class ModelGenerator:
         models = {}
         lr = LogisticRegression(class_weight='balanced',random_state=31)
         rf = RandomForestClassifier(n_estimators=75,max_features=5,max_depth=20,min_samples_split=100,class_weight='balanced',random_state=111)
+        xg = xgb.XGBClassifier(objective ='binary:logistic', colsample_bytree = 0.3, 
+                               learning_rate = 0.1,max_depth = 5, alpha = 10, n_estimators = 10,random_state=41)
+        lgtbm = lgbm.LGBMClassifier(boosting_type='gbdt', objective='binary',
+                       num_iteration=1000,num_leaves=31,
+                       is_enable_sparse='true',tree_learner='data',min_data_in_leaf=600,max_depth=4,
+                       learning_rate=0.01, max_bin=255, subsample_for_bin=5000, 
+                       min_split_gain=5, min_child_weight=5, min_child_samples=10, subsample=0.995, 
+                       subsample_freq=1, colsample_bytree=1, reg_alpha=0, 
+                       reg_lambda=0, seed=0, nthread=-1, silent=True,random_state=43)
         models["LogisticRegression"] = lr
         models["RandomForest"] = rf
-        #models["XGBoost"] = xgb
-        #models["LightGBM"] = lgtbm
+        models["XGBoost"] = xg
+        models["LightGBM"] = lgtbm
         for k,v in models.items():
             v.fit(x_train, y_train)
             models[k]=v
@@ -36,6 +45,7 @@ class ModelGenerator:
             model_results = model_selection.cross_val_score(v, x_train,y_train, cv=kfold, scoring=metric)
             # print ("Model results: ", model_results)
             mean_auc = model_results.mean()
+            std = model_results.std()
             # print out the mean and standard deviation of the training score 
             print('The model {} has AUC {} and STD {}.'.format(k, mean_auc, model_results.std()))
             model_auc[k] = mean_auc
