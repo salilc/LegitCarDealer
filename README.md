@@ -23,5 +23,5 @@ The objective of this analysis is to predict if the car purchased at the Auction
    
 Future Work :
 
-1. Work on improving the AUC by finetunig the hyper parameters of xgboost and LightGBM algorithms.
+1. Work on improving the AUC by fine tuning the hyper parameters of xgboost and LightGBM algorithms.
 2. Try and leverage outliers and missing values and see their effect on the model AUC.
