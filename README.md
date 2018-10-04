@@ -9,14 +9,14 @@ The objective of this analysis is to predict if the car purchased at the Auction
 
       - removing unwanted features
 
-      - finding null values and replacing by appropriate values
-
-      - Converting all features to log scale
+      - finding null values and replacing them using appropriate methods.
 
       - Label encoding categorical features
 
+      - Converting all features to log scale
+     
 
-2. The visualizer.py gives us visualizations across predictor variables
+2. The visualizer.py gives us visualizations across predictor variables (both categorical and continuous)
 
 3. The modelgenerator.py file creates,tunes and fits classifier models. It also calculates AUC and plots the
    confusion matrix and the classification report.
@@ -24,6 +24,4 @@ The objective of this analysis is to predict if the car purchased at the Auction
 Future Work :
 
 1. Work on improving the AUC by finetunig the hyper parameters of xgboost and LightGBM algorithms.
-2. Try and leverage outliers and missing values.
-
-
+2. Try and leverage outliers and missing values and see their effect on the model AUC.
