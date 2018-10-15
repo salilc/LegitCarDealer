@@ -20,7 +20,8 @@ class Visualizer:
                 yticklabels=corr.columns)
         plt.figure(figsize=(2,2))
         plt.show()
-
+    
+    #plotting categorical features
     def plot_cat_features(self,df):
         plt.figure(figsize = (14, 6))
         sns.scatterplot(x='MMRAcquisitonRetailCleanPrice',y = 'MMRCurrentAuctionCleanPrice',data=df)
@@ -29,7 +30,8 @@ class Visualizer:
         plt.figure(figsize = (30, 15))
         sns.lineplot(x='Make',y = 'VehicleAge',data=df)
         plt.show()
-        
+     
+    #plotting continuous features
     def plot_cont_features(self,df,contcols):
         for i in range (1,len(contcols)):
             plt.figure(figsize = (14, 6))
