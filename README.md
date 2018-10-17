@@ -3,7 +3,7 @@ The carvana dataset was obtained from Kaggle through https://www.kaggle.com/c/Do
 
 The objective of this analysis is to predict if the car purchased at the Auction is a Lemon (bad buy).
 
-1. The dataprocessor.py deals with data preprocessing viz.
+1. The dataprocessor.py deals with data preprocessing viz.[notebook](https://github.com/salilc/datasciencews/blob/master/carvana.ipynb)
 
       - cleaning data
 
