@@ -21,7 +21,7 @@ The data set is split to 60% training and 40% testing.
 # **Code walkthrough**
 The model is divided into 3 main componenta :
 
-1. The dataprocessor.py deals with data preprocessing viz.[#data2](https://github.com/salilc/datasciencews/blob/master/carvana.ipynb)
+1. The dataprocessor.py deals with data preprocessing viz.[Data Cleaning & Preprocessing](http://nbviewer.jupyter.org/github/salilc/datasciencews/blob/master/carvana.ipynb#Data-Cleaning-and-Preprocessing)
 
       - cleaning data
 
@@ -34,10 +34,10 @@ The model is divided into 3 main componenta :
       - Converting all features to log scale
      
 
-2. The visualizer.py gives us visualizations across predictor variables (both categorical and continuous)
+2. The visualizer.py viz.[Data Visualization](http://nbviewer.jupyter.org/github/salilc/datasciencews/blob/master/carvana.ipynb#Data-Visualization) gives us visualizations across predictor variables (both categorical and continuous)
 
-3. The modelgenerator.py file creates,tunes and fits classifier models. It also calculates AUC and plots the
-   confusion matrix and the classification report.
+3. The modelgenerator.py file viz.[Model Tuning & Evaluation](http://nbviewer.jupyter.org/github/salilc/datasciencews/blob/master/carvana.ipynb#Model-Tuning-and-Evaluation)
+creates,tunes and fits classifier models. It also calculates AUC and plots the confusion matrix and the classification report.
    
 # **Future Work** :
 
