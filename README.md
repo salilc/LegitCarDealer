@@ -24,7 +24,7 @@ The data set is split to 60% training and 40% testing.
 # **Code walkthrough**
 The model is divided into 3 main componenta :
 
-1. The dataprocessor.py deals with data preprocessing viz.[Data Cleaning & Preprocessing](http://nbviewer.jupyter.org/github/salilc/datasciencews/blob/master/carvana.ipynb#Data-Cleaning-and-Preprocessing)
+1. The dataprocessor.py deals with data preprocessing viz.[Data Cleaning & Preprocessing](http://nbviewer.jupyter.org/github/salilc/LegitCarDealer/blob/master/carvana.ipynb#Data-Cleaning%20&%20Preprocessing)
 
       - cleaning data
 
